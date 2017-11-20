@@ -215,21 +215,6 @@
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
-    <Reference Include="SpatialSlur">
-      <HintPath>Assets\Shared\Plugins\SpatialSlur.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ValueTuple">
-      <HintPath>Assets\Shared\Plugins\ValueTuple\System.ValueTuple.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections">
-      <HintPath>Assets\Shared\Plugins\ValueTuple\References\System.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Resources.ResourceManager">
-      <HintPath>Assets\Shared\Plugins\ValueTuple\References\System.Resources.ResourceManager.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime">
-      <HintPath>Assets\Shared\Plugins\ValueTuple\References\System.Runtime.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\GraphTest\Scripts\GraphManager.cs" />
