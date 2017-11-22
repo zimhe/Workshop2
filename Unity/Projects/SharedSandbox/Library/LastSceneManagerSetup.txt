@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MeshIntro/Scenes/MeshIntro_WIP.unity
+- path: Assets/JointTest/Scenes/JointTest_01.unity
   isLoaded: 1
   isActive: 1

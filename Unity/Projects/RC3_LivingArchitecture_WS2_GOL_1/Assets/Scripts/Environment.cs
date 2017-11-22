@@ -48,7 +48,9 @@ public class Environment : MonoBehaviour {
 		height = timeEnd;
         // Create a new CA grid
         CreateGrid ();
-	}
+        //setupNeighbors3d();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -199,7 +201,6 @@ public class Environment : MonoBehaviour {
 		}
 	}
 
-
     // Save the CA states
 	void SaveCA(){
 		for(int i =0; i< width; i++){
@@ -217,4 +218,43 @@ public class Environment : MonoBehaviour {
 			}
 		}
 	}
+
+    /// <summary>
+    /// SETUP AND STORE MOORES AND VON NEUMANN NEIGHBORS
+    /// </summary>
+    void setupNeighbors3d()
+    {
+        for (int i = 0; i < width; i++)
+        {
+            for (int j = 0; j < length; j++)
+            {
+                for (int k = 0; k < height; k++)
+                {
+                    //setup Von Neumann Neighborhood Cells
+
+
+                    //setup Moore's Neighborhood
+                    GameObject currentVoxelObj = voxelGrid[i, j, k];
+                    for (int m = 0; m < height; m++)
+                    {
+                        for (int n = 0; n < height; n++)
+                        {
+                            for (int p = 0; p < height; p++)
+                            {
+                                if ((i + m >= 0) && (i + m < width) && (j + n >= 0) && (j + n < length) && (k + p >= 0) && (k + p < height))
+                                {
+                                    GameObject neighborVoxelObj = voxelGrid[i + m, j + n, k + p];
+                                    if (neighborVoxelObj != currentVoxelObj)
+                                    {
+                                        //Voxel neighborvoxel = voxelGrid[i + m, j + n, k + p].GetComponent<Voxel>();
+                                        currentVoxelObj.GetComponent<Voxel>().neighbors3d_MO.Add(neighborVoxelObj);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -27,9 +27,15 @@ public class Voxel : MonoBehaviour {
     //variable to store a type for this voxel
 	int type;
 
+    //von neumann neighbors
+    public List<GameObject> neighbors3d_VM = new List<GameObject>();
+
+    //moore's neighbors
+    public List<GameObject> neighbors3d_MO = new List<GameObject>();
+
     // FUNCTIONS
 
-	public void SetupVoxel(int i, int j, int k, int _type)
+    public void SetupVoxel(int i, int j, int k, int _type)
     {
         //set reference to time end 
         timeEndReference = GameObject.Find("Environment").GetComponent<Environment>().timeEnd;
