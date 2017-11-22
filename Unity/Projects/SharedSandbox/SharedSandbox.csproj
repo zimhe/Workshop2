@@ -236,6 +236,7 @@
     <Compile Include="Assets\JointTest\Scripts\GridCreator.cs" />
     <Compile Include="Assets\JointTest\Scripts\InputHandler.cs" />
     <Compile Include="Assets\MeshIntro\Scripts\CreateMesh.cs" />
+    <Compile Include="Assets\MeshIntro\Scripts\CreateMesh2.cs" />
     <Compile Include="Assets\Shared\Scripts\CameraController.cs" />
   </ItemGroup>
   <ItemGroup>

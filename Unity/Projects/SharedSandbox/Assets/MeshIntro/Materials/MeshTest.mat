@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MeshTest
-  m_Shader: {fileID: 4800000, guid: f169ef1a56c940b41a27275dc66fe07c, type: 3}
+  m_Shader: {fileID: 4800000, guid: d704a88b882a2944f98e23cd0ec53081, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
