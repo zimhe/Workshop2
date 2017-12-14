@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/JointTest/Scenes/JointTest_01.unity
+- path: Assets/GraphTest/Scenes/GraphTest_01.unity
   isLoaded: 1
   isActive: 1
